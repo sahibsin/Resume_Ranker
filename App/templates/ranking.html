@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: left;
+}
+
+header {background: green;color:white;}
+footer {background: #aaa;color:white;}
+.nav {background:#eee;}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.nav ul a {
+    text-decoration: none;
+}
+
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer {-webkit-order:3;order:3;}
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	border-radius: 25px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+p.solid {border-style: solid;}
+p.groove {border-style: groove;}
+
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+<div>
+<table>
+ <thead>
+  <tr>
+    <th rowspan="2">Name</th>
+    <th rowspan="2">Contact</th>
+    <th colspan="4">CV Ranking</th>
+	<th rowspan="2">Composite Rank</th>
+  </tr>
+  <tr>
+    <th>CV Rank tf-idf</th>
+	<th>CV Rank wmd</th>
+	<th>CV Rank Relevant Skill</th>
+	<th>CV Rank Relevant Education</th>
+  </tr>
+  </thead>
+
+  <tr>
+    <td> Sahib</td>
+    <td>980007565</td>
+	<td>0.78</td>
+	<td>0.89</td>
+	<td>0.73</td>
+	<td>0.90</td>
+	<td>0.825</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>980007565</td>
+	<td>0.78</td>
+	<td>0.89</td>
+	<td>0.73</td>
+	<td>0.90</td>
+	<td>0.815</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>980007565</td>
+	<td>0.78</td>
+	<td>0.89</td>
+	<td>0.73</td>
+	<td>0.90</td>
+	<td>0.80</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>980007565</td>
+	<td>0.78</td>
+	<td>0.89</td>
+	<td>0.73</td>
+	<td>0.90</td>
+	<td>0.785</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>980007565</td>
+	<td>0.78</td>
+	<td>0.89</td>
+	<td>0.73</td>
+	<td>0.90</td>
+	<td>0.75</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>980007565</td>
+	<td>0.78</td>
+	<td>0.89</td>
+	<td>0.73</td>
+	<td>0.90</td>
+	<td>0.825</td>
+  </tr>
+
+</table>
+</div>
+<div>
+<footer>This is a demo page</footer>
+</div>
+
+</body>
+</html>

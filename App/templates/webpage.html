@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/cvranking.css') }}">
+</head>
+
+<body>
+	<div class="flex-container">
+	<header>
+		<h1>Sarpa CV Ranker</h1>
+	</header>
+	<article class="article">
+	  <h1>Job Description</h1>
+	  <p class="groove">London is the capital city of England. It is the most populous city in the United Kingdom,
+	  </p>
+	</article>
+	</div>
+
+	<div>
+	<iframe src="{{ url_for('ranking_html') }}"  height="500" width="100%" style="border:none">
+	</iframe>
+	</div>
+	<div>
+	<footer>This is a demo page</footer>
+	</div>
+</body>
+
+</html>
